@@ -1,3 +1,47 @@
-p {
-  font-size: 20pt;
+body {
+  background: url("fon1.jpg");
 }
+
+h1 {font: bold 20pt Monospace; text-align: center;
+}
+
+main {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px ridge;
+  background: white;  
+}
+
+p {
+  text-indent: 20px;
+  font: 12pt Monospace;
+}
+
+#img1 {
+  height: 434px;
+  width: 540x;
+  float: left;
+}
+
+footer {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul { 
+  list-style: none inside; 
+}
+
+li {float: left; }
+
+footer a:link, footer a:visited {
+  display: block; 
+  text-decoration: none; 
+  color: black; 
+  height:50px; 
+  width: 100px;
+  text-align: center; }
+  
+footer a:hover { color: blue;}
