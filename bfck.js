@@ -28,7 +28,7 @@
                      break;
           }
         }
-       alert(finalString); 
+       return(finalString); 
       } 
       
       function findRightBrace (input, index){
@@ -45,8 +45,12 @@
           }
           /*alert(index);*/
           return index;
+      }
+      
+      function greetings (string) {
+        alert("На языке brainfuck: " + string + " означает " + translate(string));
       }    
       
-      translate("++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.");
+      greetings("++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.");
 
 
