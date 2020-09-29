@@ -48,7 +48,7 @@
       }
       
       function greetings (string) {
-        alert("На языке brainfuck: " + string + " означает " + translate(string));
+          document.getElementById("bfck-p").innerHTML="На языке brainfuck: " + string + " означает " + translate(string);
       }    
       
       greetings("++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.");
