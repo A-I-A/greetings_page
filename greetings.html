@@ -77,21 +77,23 @@
           <p>
            <h2> Генератор паролей </h2>
            <div id="pass-wrap">
-           <p id="pass"> Сгенерировать пароль </p>
-           <button onclick="passGen()" type="button"> Сгенерировать пароль </script>
-           <script src="pass_gen.js"></script>
+             <p id="passlabel">  </p>
+             <button id="passbutton" onclick="passGen()" type="button"> Сгенерировать пароль </script>
+             <script src="pass_gen.js"></script>
            </div>
-           <h2> Интерпретатор языка brainfuck </h2>
+             <h2> Интерпретатор языка brainfuck </h2>
            <div id="bfck-wrap">
-             <p id="bfck-p">
-               <script src="bfck.js"></script>
+              <textarea id="bfckmessage" >++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>. 
+              </textarea> 
+              <button id="translatebtn" onclick="translate_bfck()" type="button"> Перевести 
+              <script src="bfck.js"></script>
              </p>
            </div>
     </main>
   
     <footer>
       <ul>
-        <li> <a href="password_generator.html"> vestibulum <a> </li>
+        <li> <a href=""> vestibulum <a> </li>
         <li> <a href=""> ante <a> </li>
         <li> <a href=""> ipsum <a> </li>
         <li> <a href=""> primis <a> </li>

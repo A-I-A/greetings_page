@@ -2,7 +2,7 @@ body {background: url("fon1.jpg");}
 
 h1 {font: bold 20pt Monospace; text-align: center;}
 
-h2 {font: bold 16pt Monospace; text-indent: 50px;}
+h2 {font: bold 16pt Monospace; text-indent: 50px; margin-bottom:0px; margin-top: 30px; }
 
 p {text-indent: 20px; font: 12pt Monospace;}
 
@@ -42,36 +42,52 @@ main {
   border: 1px ridge;
   background: white;  
 }
-
-#pass-wrap {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width:250px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100px;
-}
-
-#pass {
-  font: 14pt Monospace;
-  text-align: center;
-  height: 30px;
-  border: 1px solid black;
-}
-
 #img1 {
   height: 215px;
   width: 270px;
   float: left;
 }
 
+#pass-wrap {
+  border: 1px ridge gray;
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+#passlabel {
+  font: 14pt Monospace;
+  text-align: center;
+  width: 250px;
+  height: 30px;
+  border: 1px solid black;
+}
+#passbutton {width: 250px; height: 30px; }
+
+#bfck-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px ridge gray;
+  margin: 2px;}
+  
+#bfckmessage {
+  margin-top: 20px;
+  display: block;
+  width: 850px;
+  height: 100px;
+  resize: none;
+  font: 12pt Monospace;
+}  
+#translatebtn {width: 150px; height: 30px; }
+
 footer {
   width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-
 footer ul {list-style: none inside;}
 footer li {float: left; }
 footer a:link, footer a:visited {

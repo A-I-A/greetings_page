@@ -14,7 +14,7 @@ function passGen (){
            let finalString = result.join("");
            //alert(finalString);
 
-           document.getElementById("pass").innerHTML=finalString;
+           document.getElementById("passlabel").innerHTML=finalString;
            
          }
          

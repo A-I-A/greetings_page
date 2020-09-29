@@ -1,5 +1,5 @@
-
-      function translate (input){
+      function translate_bfck (){
+        let input = document.getElementById('bfckmessage').value; 
         let initialArray = new Array (1000);
         initialArray.fill(0);  
         let carriage = 0;
@@ -28,7 +28,8 @@
                      break;
           }
         }
-       return(finalString); 
+
+       document.getElementById("bfckmessage").value=finalString;
       } 
       
       function findRightBrace (input, index){
@@ -47,10 +48,7 @@
           return index;
       }
       
-      function greetings (string) {
-          document.getElementById("bfck-p").innerHTML="На языке brainfuck: " + string + " означает " + translate(string);
-      }    
+
       
-      greetings("++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.");
 
 
