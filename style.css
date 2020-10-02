@@ -48,6 +48,13 @@ main {
   float: left;
 }
 
+#timebar {
+  width:800px;
+  height: 60px;
+  border: 1px solid gray;
+  margin: 5px auto 10px auto;
+}
+
 #pass-wrap {
   border: 1px ridge gray;
   margin: 2px;
