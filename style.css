@@ -4,7 +4,7 @@ h1 {font: bold 20pt Monospace; text-align: center;}
 
 h2 {font: bold 16pt Monospace; text-indent: 50px; margin-bottom:0px; margin-top: 30px; }
 
-p {text-indent: 20px; font: 12pt Monospace;}
+p {text-indent: 20px; font: 12pt Monospace; text-align: justify; margin: 10px;}
 
 aside {
   position: fixed;
@@ -46,14 +46,15 @@ main {
   height: 215px;
   width: 270px;
   float: left;
+  margin-left: 3px;
+  margin-right: 8px;
 }
 
-#timebar {
-  width:800px;
-  height: 60px;
-  border: 1px solid gray;
-  margin: 5px auto 10px auto;
-}
+#clock{
+    display: block;
+    margin: 5px auto 10px auto;
+    border-bottom: 1px solid gray;  
+    }
 
 #pass-wrap {
   border: 1px ridge gray;
