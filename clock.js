@@ -10,23 +10,17 @@ function clock () {
         context.clearRect(0,0, context.width, context.height);
         context.textBaseline='top';
         context.font='bold 14pt Arial';
-        minutes = formatTime(now.getMinutes());
-        hours = formatTime(now.getHours());
+        time = now.toLocaleTimeString();
         day = formatDay(now.getDay());
-        date = `${now.getDate()}.${now.getMonth()}.${now.getFullYear()}`;
-        context.fillText(`${hours}:${minutes}`,250 ,10);
+        date = `${now.getMonth()}.${now.getFullYear()}`;
+        context.fillText(`${time}`,250 ,10);
         context.fillText(`${date}, ${day}`,400 ,10);
         context.restore();
         window.requestAnimationFrame(clock); 
      };
      window.requestAnimationFrame(clock);
 
-function formatTime (t){
-  if(t < 10){ 
-      return `0${t}`
-  }
-  return t;
-}
+
 
 function formatDay (d){
   switch (d){

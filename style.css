@@ -1,9 +1,9 @@
 body {
   background: url("fon1.jpg");
-   display:grid;
-  grid-template-columns: 180px 900px ;
+  display:grid;
+  grid-template-columns: 180px 900px;
   grid-template-rows: 50px 1fr 50px;
-  grid-template-areas: "h h" "a m" "f f";
+  grid-template-areas: "a h " "a m" "a f";
 }
 header {
   grid-area: h;
@@ -100,7 +100,7 @@ main {
 footer {
   grid-area: f;
 }
-footer ul {list-style: none inside;}
+footer ul {list-style: none inside; margin-left:auto; margin-right:auto;}
 footer li {float: left; }
 footer a:link, footer a:visited {
   display: block; 
