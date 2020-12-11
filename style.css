@@ -2,8 +2,10 @@ body {
   background: url("fon1.jpg");
   display:grid;
   grid-template-columns: 180px 900px;
-  grid-template-rows: 50px 1fr 50px;
-  grid-template-areas: "a h " "a m" "a f";
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas: "a h " 
+                       "a m" 
+                       "a f";
 }
 header {
   grid-area: h;
